@@ -1,0 +1,38 @@
+1. HTML -->
+    Index : It's important when we make a website the first or important page and .html is an extension.
+    Boilerplate Code : That code which we willhave to write necessarily 
+        <!Doctype> --> Version of HTML 5
+        <html></html>  --> Acts as a wrapper coupled up the head and body tags
+        <meta> Instruction
+        <title> It's for the title
+        Content comes from the body tag <body></body>
+
+    h1-h6, p, b, li, ul, ol, sup, sub, 
+    Anchor Tag, Img , video, div -> use to make a rectangle and to make use of it for to store something,By default the div has width but not height if we don't give any width and height,  id # , class . --> to differentiate the elements based on the names , All the ids can't repeat their names but all the class can have the same name.
+
+    Kai baar tags ko dekh kar yeh nahi bataya jaa sakhta ki aap exactly kya bananewalle ho iss cheiz ko kaffi haq tak solve karta hai html5 semantics.
+
+    Main
+        section
+            Nav
+            Header
+            Aside
+            Article
+            Audio/video
+        section
+            Footer
+    Main
+
+    Main : All the website will be under this
+    Section : Pages of websites
+    Nav : Navigation baar
+    Header : First section of the website where it contains the landing page and the necessary text.
+    Article : The sub elements present in the websites
+    Aside : Which are fixed aside elements
+    Audio/ Video : Audio support and video support
+    Footer : Last part of the websites containing the footer elements.
+
+2. CSS :
+
+    Cascading style sheet
+    
