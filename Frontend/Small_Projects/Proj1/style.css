@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    /* grid-template-rows: 50% 50%; */
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 30% 55% 15%;
+}
+
+
+/* #left{ */
+    /* width: 50%; */
+    /* background-color: red; */
+/* } */
+
+/* #right{ */
+    /* width: 50%; */
+    /* background-color: blue; */
+/* } */
+
+#left-top-left{
+    /* background-color: crimson; */
+    padding: 1.6vw;
+}
+
+#square{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    /* border-radius: 50%; */
+    rotate: 45deg;
+}
+
+#left-top-right{
+    /* background-color: blueviolet; */
+    /* grid-row: 1/4;
+    grid-column: 2; */
+    justify-self: right;
+    padding: 1.5vw;
+    /* padding: 1.5vw 0 1.5vw 1.5vw; */
+    text-align: right;
+}
+
+#left-top-right h6{
+    display: none;
+}
+
+#left-top-right h4{
+    margin-bottom: 3.2vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+#left-top-right h5{
+    /* justify-self: right; */
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.4vw;
+}
+
+#left-center{
+    /* background-color: royalblue; */
+    grid-column: 1/3;
+    padding: 1vw;
+}
+
+#left-center h1{
+    font-size: 6.7vw;
+    text-transform: uppercase;
+    line-height: 6vw;
+    font-weight: 500;
+}
+
+#left-center h1:nth-child(2n){
+    /* background-color: red; */
+    text-align: center;
+}
+
+#left-bottom{
+    /* background-color: chartreuse; */
+    grid-column: 1/3;
+    padding: 1.6vw;
+    /* width: 70%; */
+}
+
+#left-bottom p{
+    width: 78%;
+    text-align: left;
+}
+
+#right{
+    grid-row: 1/4;
+    /* background-color: orange; */
+    grid-column: 3;
+    padding: 1.8vw;
+    padding-right: 5vw;
+}
+
+#right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}
+
+#arrow{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    left: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    background-color: orangered;
+    color: white;
+    padding: 1.2vw;
+    border-radius: 50%;
+}
+
+#arrow i{
+    font-size: 2.5vw;
+    font-weight: 100;
+    opacity: 0.9;
+}
+
+#searchbar{
+    position: absolute;
+    top: 6%;
+    left: 97.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+
+#searchbar i{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+
+/* For Mobile Responsiveness */
+/* max-width:600px */
+
+@media (max-width:425px) {
+    main{
+        width: 100%;
+        height: 100%;
+        background-color: #ededed;
+        /* display: grid;
+        grid-template-columns: 50% 50%; */
+        /* grid-template-rows: 50% 50%; */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* grid-template-rows: 30% 55% 15%; */
+        grid-template-rows: 7% 30% 10%;
+    }
+
+    #right{
+        grid-row: 4;
+        /* background-color: orange; */
+        grid-column: 1/4;
+        padding: 0.9vw;
+        /* padding-right: 2vw; */
+        padding-top: 2.5vw;
+    }
+
+    #right video{
+        height: 54vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 7px;
+    }
+
+    #left-top-left{
+        /* background-color: crimson; */
+        /* padding: 4.5vw; */
+        padding: 3.5vw;
+    }
+
+    #square{
+        width: 14px;
+        height: 14px;
+        background-color: black;
+        /* border-radius: 50%; */
+        rotate: 45deg;
+    }
+
+    #left-top-right{
+        /* background-color: blueviolet; */
+        /* grid-row: 1/4;
+        grid-column: 2; */
+        /* justify-self: right; */
+        /* padding: 1.5vw; */
+        /* padding: 1.5vw 0 1.5vw 1.5vw; */
+        /* text-align: right; */
+        /* display: none; */
+        grid-row: 1;
+        grid-column: 2/4;
+        padding: 3.5vw;
+    }
+
+    #left-top-right h6{
+        display: initial;
+        font-size: 5vw;
+    }
+
+    #left-top-right h4{
+        margin-bottom: 3.2vw;
+        font-size: 1.5vw;
+        font-weight: 500;
+        display: none;
+    }
+
+    #left-top-right h5{
+        /* justify-self: right; */
+        font-size: 1.1vw;
+        font-weight: 500;
+        color: #333;
+        line-height: 1.4vw;
+        display: none;
+    }
+
+    #searchbar{
+        position: absolute;
+        top: 6%;
+        left: 97.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-50%,-50%);
+        display: none;
+    }
+
+    #searchbar i{
+        font-size: 1.5vw;
+        font-weight: 100;
+        display: none;
+    }
+
+    #left-center{
+        /* background-color: royalblue; */
+        /* grid-column: 1/3; */
+        padding: 1vw 2vw;
+    }
+
+    #left-center h1{
+        font-size: 16vw;
+        /* font-size: 14.3vw; */
+        text-transform: uppercase;
+        line-height: 14vw;
+        /* line-height: 11.5vw; */
+        font-weight: 500;
+    }
+
+    #left-center h1:nth-child(2n){
+        /* background-color: red; */
+        text-align: right;
+    }
+
+    #left-bottom{
+        /* background-color: chartreuse; */
+        grid-column: 1/3;
+        padding: 1vw 2.8vw;
+        /* padding: 1.6vw; */
+        /* width: 70%; */
+    }
+
+    #left-bottom p{
+        width: 100%;
+        text-align: left;
+        font-size: 3.5vw;
+        line-height: 3.6vw;
+    }
+
+    #arrow{
+        position: absolute;
+        top: 49%;
+        /* left: 50%; */
+        left: 39%;
+        rotate: 90deg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-50%,-50%);
+        background-color: orangered;
+        color: white;
+        padding: 3vw;
+        /* padding: 1.2vw; */
+        border-radius: 50%;
+    }
+
+    #arrow i{
+        font-size: 5.7vw;
+        font-weight: 200;
+        /* opacity: 0.9; */
+    }
+}

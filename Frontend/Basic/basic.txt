@@ -35,4 +35,85 @@
 2. CSS :
 
     Cascading style sheet
+    box --> div
+width and height
+Color, Backgroundcolor
+Units - 
+    Px : DPI -> Depthper inch (Retina dislpay or ULtraHD) , PPI (Pixel per inch) => Px varies from computer to computer desktop. We make less use of px as it gives a scroller as we can't rely much on it due to less responsiveness,
+    % : The total screen of some value like from 100%-50% = 50% The % value takes the value from the Parent ,
+    vh : ,
+    vw : ,   => The vh and vw takes the value from the screen
+
+    rem : It depends upon the html font-size. Rem (Root emperial Unit),
+
+    em : Itdepends on the elements size, agar aap yeh parent ko dete hai toh children par bhi apply hotta hai. Matlab kuch aisa aek element hai box jiske pass 16px font-size hai toh 1em ki value 16px hoggi aur agar font change hua toh em ki value bhi change hoggi. And 1em value = 16px, 
+
+    Max-width/Max-Height : It's like a hook if we try to push above that limit it will not exceed above that. For example : test width is 500px and test value is 1200px the test value will not go above 500px value of test as max-width is set to be 500px,
+    It will not exceed above that value or after that value. Limit lag jaat hai ussae upar nahi jayega.
+    
+    Min-width/ Min-height : It will set the hook as yeh itni minimum value kae upar hi rahegae sabh elements. This is the minimum value all the elements 
+
+Font-family : Changing the font style
+    -> This are of two types :
+        (a) Serif : Have sharp edges Example : playfair display , 
+        (b) Sans Serif : No sharp edge is present  Example : Montserrat.
+
+Font-size : Changing the font sizes
+Line-height : 
+text-align :
+padding : Applied from the parent
+margin : 
+border : width style Color,
+display : 
+border-radius
+position : 
+    (a) Absolute --> It levetates as per the layer depending upon the elem positions, 
+    (b) Relative --> It controls the absolute position element as a parent or respectively with the relative the absolute follows
+    (c) Fixed
+
+background :
+    -> Color : Lineargradient(todirection, color1, color2)  // todirection as : to right bottom, to right top, etc...
+
+    -> url for an image
+    -> Background-size : cover,
+    -> Background-position : center,
+    -> Background-image 
+
+flexbox :
+    -> It's applied on the parents 
+    -> Two access are activated
+    -> X and Y axis
+    -> X axis as Main-axis and Y-axis as Cross-axis
+    -> Justify-content for the main axis X-axis and Align-items for the Cross-axis Y-axis.
+
+
+--> Har element kae pass aek possibility hotti hai ki wou element chahe toh inactive doo after and before property ko activate karsakhta hai. 
+
+pseudo-elements : 
+    ::before
+    ::after
+    ::first-Line
+    ::first-letter
+    ::selection
+
+pseudo-classes : 
+    :hover
+    :active
+    :focus
+    :nth-child(n)
+
+
+Color Theory : 
+    -> Our screen shows mainly three screen. It has been made up from many led screens, And everyone of them can show three colors and combination of those three colors.
+    -> In css every color has minimum value 0 and maximum value 255.
+    -> R=255, G=255, B=255 => White light on full intensity of every color
+    -> R=0, G=0, B=0 => Black color on low intensity of every color.
+
+    -> Hexadecimal code : #
+    -> Rgb 
+    -> Rgba (r,g,b,transperancy or opacity)
+    -> Hsl (Hue, Saturation, light)
+
+animation
+media queries
     

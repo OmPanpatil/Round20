@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+#percentageworking{
+    height: 60vh;
+    width: 50vw;
+    background-color: lightblue;
+    padding: 0.5vw;
+}
+
+h3{
+    text-align: center;
+    padding: 1vw;
+    font-size: 1.5vw;
+}
+
+#parent{
+    height: 25vh;
+    width: 500vw;
+    background-color: lightcoral;
+    max-width: 40vw;
+}
+
+#child{
+    height: 100%;
+    /* width: 60vw; */
+    width: 80%;
+    background-color: lightpink;
+}
+
+#remandem{
+    width: 50%;
+    height: calc(100% - 60vh);
+    background-color: lightgreen;
+}
+
+#test{
+    font-size: 16px;
+    width: 10em;
+    height: 10em;
+    background-color: whitesmoke;
+}
+
+#advn{
+    height: 100%;
+    width: 100%;
+    background-color: wheat;
+}
+
+#box{
+    height: 200px;
+    width: 300px;
+    background-color: lightpink;
+    padding: 25px;
+    /* margin: 60px; */
+}
+
+#fexbox{
+    width: 100%;
+    height: 100%;
+    background-color: lightskyblue;
+    padding: 4vw;
+}
+
+#box2{
+    height: 50vh;
+    width: 50vw;
+    background-color: lightcoral;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#car1{
+    width: 20vw;
+    height: 25vh;
+
+}
+#car1 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#car2{
+    width: 20vw;
+    height: 25vh;
+}
+
+#car2 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+p{
+    font-size: 3vw;
+    text-align: center;
+    color: lightcoral;
+}
+
+p::before{
+    content: "Hello ";
+}
+
+p::after{
+    content: " Hello ";
+}
+
+h2::first-line{
+    color: lightskyblue;
+    /* margin: 3vw; */
+}
+
+h2::first-letter{
+    font-size: 6vw;
+    color: lightskyblue;
+}
+
+p::selection{
+    background-color: lightpink;
+}
