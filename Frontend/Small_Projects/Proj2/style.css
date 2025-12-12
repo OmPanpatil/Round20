@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html,body{
@@ -13,4 +14,118 @@ main{
     height: 100%;
     width: 100%;
     background-color: rgb(255, 253, 253);
+}
+
+nav{
+    width: 100%;
+    /* height: 4em; */
+    /* background-color: lightblue; */
+    display: grid;
+    grid-template-columns: 6em 6em 6em 2em;
+    grid-template-rows: 4em;
+    align-items: center;
+    justify-items: center;
+    justify-content: flex-end;
+    /* gap: 1em; */
+    gap: 2em;
+    padding: 0 5.7em;
+    /* padding: 0 3em; */
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* background-color: red; */
+    /* justify-items: center; */
+    /* align-content: center; */
+    /* padding: 1em 1em; */
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+nav i{
+    padding: 0.6em 0.6em;
+    /* background-color: lightgreen; */
+    color: rgb(253, 251, 251);
+    font-size: 1.2em;
+    background-color: black;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+#center{
+    height: 20em;
+    /* width: 100%; */
+    /* background-color: red; */
+    padding: 3em 5em;
+}
+
+#center h1{
+    /* font-size: 4.4em; */
+    font-size: 4.9em;
+    font-weight: 500;
+    line-height: 1.1em;
+}
+
+#center-in{
+    height: 12em;
+    /* background-color: rebeccapurple; */
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#center-in p{
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+#right{
+    width: 20%;
+}
+
+.elem{
+    /* background-color: yellow; */
+    margin: 0.5em;
+    padding: 0.6em 0;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem i{
+    font-size: 1.2em;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    /* font-size: 1.2em; */
+}
+
+/* .elem:hover{ */
+    /* text-decoration: underline; */
+/* } */
+
+.elem:hover i{
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+    /* text-decoration: none; */
+    /* background-color: antiquewhite; */
+    /* text-decoration: underline; */
+}
+
+#bottom{
+    height: 40em;
+    background-color: lightcoral;
+    margin-top: 12em;
+    background-image: url(./Serene\ Highland\ Solace.png);
+    background-size: cover;
+    background-position: 0 48%;
 }
