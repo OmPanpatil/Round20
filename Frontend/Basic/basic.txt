@@ -116,4 +116,45 @@ Color Theory :
 
 animation
 media queries
-    
+
+
+
+
+
+##javascript :
+    -> Created by Branden Eigg
+    -> Unwanted things or error 
+    -> In intial js was known as moca
+    -> script.src
+    -> Declaration : var a;
+    -> Initialization : a=10;
+    -> / quotient (10/5=2)
+    -> % remainder (10%5 = 0)
+    -> ALert - For message, Confirm('Are you there?'), prompt("Enter name : )
+    -> let and const use for variable making
+
+   (1) Js the language :
+    => Managed by ecmascript community (overall development of js.)
+    => Code likhna seekhna 
+
+    -> Basics : file connection and execution
+    -> Inbuilt Features : log, warn, error, Confirm, prompt
+    -> Variables Constant : 
+        -> Har programming language mein data saw deal karna hota hai wou alag alag prakar ka data ho sakhtta hai. tou wou data save karne ke liye hume koi saving space chahiye jaha par data save hojaaye and yeh save karne ke liye unnhe kuch naam bhi denna padega.And esiliye humme variables and constants bannae padte hai taaki data save hojaye and unka koi naam bhi hotaaki hum unhe baadmae access karsakhte hai. 
+    -> Compilers and interpreter
+    -> Window
+    -> types
+    -> Conditionals
+    -> Loops
+    -> Functions
+    -> Arrays
+    -> Objects
+    -> Prototypes
+    -> Prototypal Inheritance
+    -> Synchronous and asynchronous JS
+    -> ES6 climax
+
+    -> Questions
+
+   (2) Js the DOM :
+   => Codes likhkar cheezein banana seekhna
