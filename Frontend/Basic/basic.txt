@@ -141,9 +141,48 @@ media queries
     -> Inbuilt Features : log, warn, error, Confirm, prompt
     -> Variables Constant : 
         -> Har programming language mein data saw deal karna hota hai wou alag alag prakar ka data ho sakhtta hai. tou wou data save karne ke liye hume koi saving space chahiye jaha par data save hojaaye and yeh save karne ke liye unnhe kuch naam bhi denna padega.And esiliye humme variables and constants bannae padte hai taaki data save hojaye and unka koi naam bhi hotaaki hum unhe baadmae access karsakhte hai. 
-    -> Compilers and interpreter
-    -> Window
-    -> types
+        -> When we run the code like js will run in chrome or browser but it keeps some storage to store the data known as Google Chrome Storage. 
+        -> But it indirectly stores in RAM.
+        -> Whatever u runs on computer systems it runs on ram.
+        -> Variables can store and change it values again. But, const takes the values but doesn't changes it again.
+        -> And both takes some place on the browser memory and browser runs on ram then technically both runs on ram or takes space in ram.
+
+
+    -> Compilers and interpreter :
+        => Compiler : Task run slow, but run fast
+        => interpreter : Task run fast, but run slow
+        => Js language english words use karti hai and computers english nahi samajhte they understand current flow(1) and current bypass (0) 
+        => SO we use translattor that will take code in english and convert it into 0 & 1.
+        => Compiler and interpreter are the translator.
+        => Compiler converts the english code into machine code (task run slow, fast run)
+        => Interpreter converts the code into Byte code (less hardware, Fast conversion rate but slow run)
+        => Javascript is an interpreted language 
+        => It uses JIT (Just In Time Compiler) -> It uses the early power of interpreter that the fast conversion rate and compiler running strength
+
+    -> Window :
+        => It is a collection of tools that browser offers to use in JS.
+        => There are many features that are frequently used in JS and they are not the part of JS, but they are available in the browser. But when we use them in JS they are called from the browser not the JS.
+
+    
+    -> Types and Data Types :
+        (a) Primitive Data types :
+            => Number (23, 23.5, 24.55)
+            => String ('a', "Om")
+            => Boolean (true or false)
+            => Undefined
+            => Null
+            => Symbol
+            => BigInt
+
+
+        (b) Reference Data types : [], {}, ()
+            => Arrays
+            => Functions
+            => Objects
+
+                
+
+
     -> Conditionals
     -> Loops
     -> Functions
