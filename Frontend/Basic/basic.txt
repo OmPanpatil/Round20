@@ -165,6 +165,8 @@ media queries
 
     
     -> Types and Data Types :
+            => pop, .spread operator 
+            [...arrayname]
         (a) Primitive Data types :
             => Number (23, 23.5, 24.55)
             => String ('a', "Om")
@@ -194,6 +196,10 @@ media queries
     -> ES6 climax
 
     -> Questions
+
+
+
+            => Split, Slice ``, template literals (`${}`)
 
    (2) Js the DOM :
    => Codes likhkar cheezein banana seekhna

@@ -6,3 +6,5 @@ console.log(abs);
 let x = 'LinkinPark';
 let y = 'Numb';
 console.log(x + ' ' + y);
+let z = x.slice(0,4);
+console.log(z);
