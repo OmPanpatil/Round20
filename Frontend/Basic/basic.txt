@@ -185,10 +185,104 @@ media queries
                 
 
 
-    -> Conditionals
-    -> Loops
-    -> Functions
-    -> Arrays
+    -> Conditionals :
+
+            -> if(condition is true){ } else{}
+            -> else if(){} else{}
+            -> Ternary Operator : condition() ? () : ();
+                = (12>11) ? console.log('Hii') : console.log('heyy');
+            -> Switch : switch(value){ case value:  //code   break;  case value:  //code  break;  default :  //code}
+                = 
+
+                Truthy and falsy :  null, undefined, '' , " ", 0, NaN, document.all => Falsy or false rest all are Truthy.
+
+    -> Loops : 
+        for, while, do-while, foreach, forin and forof   
+
+        for(Initialization; condition; updation){
+        } 
+        for(start; end; change){}
+
+            =for(let i = 0; i<=5; i++){ console.log(i);}
+
+        While loop : initialization at the begining, condition at the bracket and updation at the inner code
+        let v = 21;
+        while(){
+            //code
+        }
+
+        let i = 1;
+        while(i<=10){
+            i++;
+            log(i);
+        }
+
+        do-while :
+
+        do{
+            log
+            i++;
+        }
+        while(11<12)
+
+
+        -> foreach() : yeh ek normal loop nahi hai jo numners pe ya start aur end par chalta hai , forEach loop sirf array pae chalta hai 
+
+        -> break (stop) and continue (skip at that elem)
+
+
+
+
+    -> Functions :
+    => Es5 and ES6
+    => Es5 : Functions statement, function expression, anonymous Functions 
+    => ES6 : Fat arrow function : (a) Basic fat arrow function, (c) Fat arrow function with implicit return, (b) fat arrow function with one paramter.
+    => Js is a first class function
+    => Js does not involves type naming of the function
+    => What is functions : Koi aisa code jou aapko baar baar use karna ho, ya fir koi aisa code jisko turant na chalana ho par kabhi chalana ho, usey function mae daal sakhte ho.
+    => why we need functions :  To reuse, to wrap the code which we  want to run the code in future at some point of time.
+
+    => Syntax :
+        function abd(){
+
+        } 
+        abcd();
+
+        => Parameter and arguments : The parameters are the variables that accept the value from the arguments. And the arguments are the one which passes the values to the arguments.
+
+        *ES5 =>
+        (1) Function statement : function abd(){ //Function statement } abd();
+        (2) Function expression : let abd = function cbd(){ Function expression } cbd();
+        (3) Function anonymous : function(){Anonymous function}
+
+        *ES6 =>
+        (1) Simple Fat arrow function : var a = () => {}; var bb = () => {}
+        (2) Fat arrow function with one Parameter : let bb = (ag) => {} bb(12);
+        (3) Fat arrow function with implicit return : let abcd = ()=> 34;   abcd(); //number, true, array, "om"
+
+    -> return : The code runs on the series od line of code and when a function runs it returns whatever will go to from where it was started  ex: suppose for example line 42 it will return there again. from where the functions where called.
+
+    function abcd(){
+        return 12;
+    }
+    let ans = abcd();
+
+    why functions always return something in js : functions always return something when we don't define anything something is exist. Then it is the notdefined.
+    let a = (bb) => 12; let ans = a();
+
+    -> Undefined, Not defined, Null :
+        Undefined : Is a value (No value)
+        Not defined : Is an error  (No Declaration)
+        Null : Is also a value. (No value is been given or found)
+
+
+    -> Arrays : 
+        => What : Aek yah ek sae jyada values ko saath mae rakhna ho 
+        let users = ["Om" , " " , " "]
+
+        => How : let arr = [0, "om", 'String']; arr(1);  //0 indexing
+
+    -> Looping with Arrays : 
     -> Objects
     -> Prototypes
     -> Prototypal Inheritance
@@ -199,7 +293,7 @@ media queries
 
 
 
-            => Split, Slice ``, template literals (`${}`)
+            => Split, Slice ``, template literals (`${}`), .relace  (for first occurence element or changing element), .replaceAll, Includes (Sees is it present there)
 
    (2) Js the DOM :
    => Codes likhkar cheezein banana seekhna

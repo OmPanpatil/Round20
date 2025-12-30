@@ -8,3 +8,13 @@ let y = 'Numb';
 console.log(x + ' ' + y);
 let z = x.slice(0,4);
 console.log(z);
+
+let dateofbirth = 31/12/2026;
+let todaydate = 31/12/2026;
+function happynewyear(){
+    alert('Happy New Year 2026!');
+}
+
+if(dateofbirth === todaydate){
+    happynewyear();
+}
