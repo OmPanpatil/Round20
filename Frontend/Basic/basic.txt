@@ -282,13 +282,50 @@ media queries
 
         => How : let arr = [0, "om", 'String']; arr(1);  //0 indexing
 
+        => why : A lot of times the data is in the shape of more than one values to contain all together that's when array is used.
+
     -> Looping with Arrays : 
-    -> Objects
-    -> Prototypes
-    -> Prototypal Inheritance
-    -> Synchronous and asynchronous JS
+
+        //How to loop an array and do something with each
+
+        arr.foreach(function(val){
+
+        })
+
+    -> Objects :
+
+    => Specific elem data or a lot of data all at once.
+
+    let obj = {}
+    let obj2 = new Object();
+    let obj = {
+        name: "om";
+    }
+
+
+    -> Synchronous and asynchronous JS :
+
+    => Js runs in main stack and side stack.
+    =>When the code runs where some of the lines of codes are sync and async code.
+    => The sync code goes into main stack when it is play or executed properly in main stack
+
+    * Synchronous JS : 
+        => Follows line of code and execution
+        => The sync code goes into main stack when it is play or executed properly in main stack
+        => The main stack become empty and it's executed properly
+
+    * ASynchronous JS :
+        => Doesn't follow lines of code follows as per the execution of the first like all of the code start at once and as per the finishing of the code of line that answer is provided.
+        => The async code goes into Sidesctack for the execution of the code.
+        => When it is executed it will be passed on to the main stack when the main stack is empty
+        => And the side stack becomes empty and enters the main stack and executed properly and main stack becomes empty and we get the output.
+        
+
     -> ES6 climax
 
+    -> this, call, apply, bind
+    -> Prototypes
+    -> Prototypal Inheritance
     -> Questions
 
 
