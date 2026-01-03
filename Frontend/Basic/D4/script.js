@@ -24,3 +24,63 @@ let arr = [1,2,3,4,5];
 arr.forEach(function(val){
     console.log(val);
 });
+
+let obj = {
+    name : function namess(){
+        console.log("ur name is : " + this.name2);
+    },
+    name2 : "Om",
+    name3 : "Omm"
+}
+
+obj.name();
+
+
+let obj2 = {
+    fn : function(){
+        function innerfn(){
+            console.log("This is the function inside the method " + this);
+            
+        }
+        innerfn();
+    }
+}
+obj2.fn();
+
+let objj = {
+    fns: function(){
+        const ab = () => {
+            console.log("This value is object inside es6 arrow function " );
+            
+        }
+        ab();
+    }
+}
+objj.fns();
+
+let cofns = function bdd(){
+    console.log("This is a constructor function " + this);
+    
+}
+const anss = new cofns();    //gives a new blank object.
+
+document.querySelector('button').addEventListener('click', function(){
+    alert('Button Clicked!');
+    console.log(this);
+})
+
+let objjjj = {namess : 'Om'};
+
+function abddd(){
+    console.log(this);
+    
+}
+abddd.call(objjjj);
+
+
+let biiid = {f : 'Self-love buddy'};
+function biifn(){
+    console.log(this);
+}
+const badmckl = biifn.bind(biiid);
+badmckl();

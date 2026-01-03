@@ -323,7 +323,94 @@ media queries
 
     -> ES6 climax
 
-    -> this, call, apply, bind
+    -> this, call, apply, bind :
+
+        => this : this keyword js mein bohot hi suspensefull keyword(let, var, for, while, const, etc) hai. this ki value baar baar badal sakhti hai alag alag condition mein, saari conditions ko sikh jao toh this ki value samajh jaogae
+
+            * This ki value in :
+
+                => global scope : this value is Window
+                    -> console.log(this);
+
+                => function : this value is window 
+                    -> let ans = function abdd(){
+                        console.log("answer");
+                    }abdd();
+
+                => method mae this ki value : this value is Object.
+                    -> function inside a object is known as the method.
+                    -> let obj = {
+                        name : function naming(){
+                            log("ur name is : " + this.name2 );
+                        }
+                        name1 : Om;
+                        name2 : ommm;
+                    }
+                    obj.name();
+
+                => Function inside method es5 : this value is window 
+                    -> function inside an object and again a function inside an object is the function inside an object.
+
+                    -> let obj2 = {
+                        name : function(){
+                            function abd(){
+                                log(this);
+                            }
+                            abd();
+                        }
+                    }
+                => function inside method ES6 : this value is Object.
+
+                let objj = {
+                    fns : function(){
+                        let ab = ()=>{
+                            log(this);
+                            console.log("Heyy");
+                        }
+                        ab();
+                    }
+                }
+                objj.fns();
+
+                => constructor function mein this ki value : this value is new blank Object.
+                    -> function abcd(){
+                        console.log(this);
+                    }
+                    const ans = new abcd();
+                => event listener mein this ki value : that element jispar event listener laga ho
+
+
+
+                => call, apply, bind :
+                    -> These three are the steps which can be followed to call a function kisi 
+                    -> yeh teen tareeke hai kissi object ko this maankar
+                    object ko this maan kar.
+
+                    call : let obj = {name : 'Om'};
+                    function abcdd(){
+                        log(this);
+                    }
+                    abcdd.call(obj);
+
+
+                    apply : It uses first value as a this and then comma and arrays
+
+                    let obj = {current : 'Goals focused'}
+                    function g(){
+                        log(this, a,b,c,d);
+                    }
+                    g.call(obj, [1,2,3,4]);
+
+
+                    bind : aek function detta hai baadmae chalane ke liyae.
+                    const obj = {foc : 'self-love'}
+                    function dd(){
+                        log(this);
+                    }
+                    const badmaechalanekaeliyae = dd.bind(obj);
+                    badmaechalanekaeliyae();
+
+
     -> Prototypes
     -> Prototypal Inheritance
     -> Questions
