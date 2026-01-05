@@ -1,0 +1,9 @@
+#cali{
+    margin: 1em;
+    padding: 3em;
+    border-radius: 2vw;
+    /* width: 5em; */
+    /* height: 2em; */
+    background-color: yellow;
+    /* background-color: linear-gradient(to right, orangered, orange, yellow); */
+}

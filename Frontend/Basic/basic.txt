@@ -399,7 +399,7 @@ media queries
                     function g(){
                         log(this, a,b,c,d);
                     }
-                    g.call(obj, [1,2,3,4]);
+                    g.apply(obj, [1,2,3,4]);
 
 
                     bind : aek function detta hai baadmae chalane ke liyae.
@@ -412,7 +412,54 @@ media queries
 
 
     -> Prototypes
-    -> Prototypal Inheritance
+    -> Prototypal Inheritance :
+
+        =>Human can walk, eat, etc. Likewise, teacher can do teaching except some other human. Likewise, singer can sing the songs.
+        => Hum objects create karte hai and kisi ek parent constructor function ke protoype mein kuchh add kr deta hai and jabh bhi yeh add hotta hai toh uss parent sae bannae wllae sabh children instance ko wou properties jou parent mein di gayi thi wou milti hai sougaat mae.
+        => Aisa koi bhi function jismein aap this ka upyoag kar rahe hoaur us function ko call karte waqt aap new ka upyoag karrae, to new ka matlab waha par ek balnk object hojata hai.
+
+        => ek function jou ki this ka upyog kar raha ho and new ke dwara naye naye objects bankar deta hai essae function ko constructor func kehte hai.
+
+    -> CLosures :
+
+        =>aisa koi bhi function jou koi aur function ko return kardae koi parent ki value ko use karkey.
+        => ek function jou return karre dusra function. Aur use karrae parent function ka koi variable return maein.
+
+        function abcd(){
+`           let a = 15;
+            return function bb(){
+                log(a);
+            }
+        }
+        let ans = abcd();
+
+
+    -> event Delegation :
+        => Jab aap event listener sae kai saare different elements ke events ko handle kar sakhe.
+        => Event listener ko parent par lagao and unko id, class ya fir tag ke basis par differentiate karkey different task karao.
+    
+    -> Higher Order FUnction : 
+        => Aisa koi bhi function jou ki ek function ko parameter mein accept karlae and/or ya fir ek function ko return kardae.
+        => Aisa koi bhi function jo ki ek function ko paramter mein accept karle and/or ek function ko return kardae.
+
+    -> Javascript (try catch) [Error Handling like a pro in JS] :
+        => to write like try mein purrae code ko daalo aur catch mein error ko accept kijiyae.
+
+        
+    -> Custom Events :
+
+        => Events
+        => We can create the events on our own.
+
+        => Why : When there is manhy lines of code we do events by 
+        => make event, attach event to some dom event, dispatch that eventfrom that dom element in which u attached the event
+        => let myevent = new Event("gharjao");
+        document.qselector("button").addEventlistener("gharjao", function(){
+            alert("arra hu");
+        })
+        document.qselector("button").dispatchEvent(myevent);
+
+
     -> Questions
 
 

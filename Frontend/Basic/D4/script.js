@@ -84,3 +84,64 @@ function biifn(){
 }
 const badmckl = biifn.bind(biiid);
 badmckl();
+
+
+function makehuman(username, age){
+    this.username = username;
+    this.age = age;
+    // this.printmyname = function(){
+
+    // }
+
+}
+
+makehuman.prototype.printmyname = function(){
+    console.log(this.name);
+    
+}
+
+
+
+let ansss1 = new makehuman("Om", 22);
+let ansss2 = new makehuman("Salauddin", 22);
+
+
+let parent = document.querySelector("#parent");
+parent.addEventListener("click", function(ev){
+    if(ev.target.id === "play"){
+        console.log("Play the song!");
+        
+    } else if(ev.target.id === "pause"){
+        console.log("Pause the song!");    
+    }
+});
+
+function hofs(){
+    return function(){
+
+    }
+}
+
+
+
+function divide(a,b){
+    try{
+        if(b === 0){
+            console.log("It can't be divided!");
+            alert("can't divide!");
+        }
+        console.log(a/b);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+divide(12,0);
+// divide(a/b);
+
+let calievent = new Event("DO push urself!");
+let cali = document.querySelector("#cali");
+cali.addEventListener("DO push urself!", function(){
+    alert("Let's go 😀");
+});
+document.querySelector("cali").dispatchEvent(calievent);
