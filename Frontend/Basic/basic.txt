@@ -468,3 +468,67 @@ media queries
 
    (2) Js the DOM :
    => Codes likhkar cheezein banana seekhna
+
+    -> DOM Manipulation :
+        => Document Object Model
+        => Jou bhi hum website par dekhte hai wou sabh kuch body tag ke andar banta hai, Ab jo body mein banta hai wahi humein website par dikhta hai.
+        => DOM htoa hai HTML tag aur uss kar pura control JS mein.
+
+        => KAbhi aapa chahte ho ki aap ek button ko click karke ek DIV gayab karde
+        => HTML mein koi assa feature nahi jou click ko handle karsakhe
+        => Aeise js jou aapke webpage par chhejo ko badal sake, us js ko hum perform kar skte hai DOM ke saath
+
+        => Bodymein kuch bhi change karna ya manipulate karna actually DOM Manipulation kahlatta hai.
+
+            (a) Accessing Elements, (document.queryselector())
+            (b) Modifying Elements, (InnerHtml, Textcontent)
+            (C) Manipulating Styles and classes, (Styles and classList)
+            (d) Creating and Deleting Elements. (createElement(), appendchild(), removechild())
+            (e) Event handling (addEventListener()),
+            (f) Event Object
+
+            (a) Accessing Elements : Usse yeh kardo yeh honnae par  --> usse : Selection, yeh kardo: change, yeh honnae par : Event.
+            Selection
+             change
+            Event
+
+            document.querselector()
+
+            => Ek webpage banao usse mein kuch elements like button click here or download.
+                => Types of selection :
+
+                    (a) document.getElementById
+                        -> let heading1 = document.getElementById('#topkatext');
+                    (b) document.getElementByClassName
+                        -> let heading2 = document.getElementByClassName('.topkatext2');
+                    (c) document.getElementByTagName
+                        -> let heading = document.getElementByTagName('h1');
+
+
+                        Question :
+                            (1) Create two images in HTML and two h3 and select all of them this way:
+                                give first image some id and second image a class. give first h3 a class and select the last h3 with id.
+
+// Agar aapke pass bohot saare h3 hai and aap select karte ho toh sirf pehla walla h3 select hoga.
+
+            (b) Modifying Elements : Kisiko bhi change karne sae pehle usse select karna hota hai.
+            Textcontent => for changing the text of an elem.
+            InnerHtml => FOr tags using or like italic it will show the text with italic style. but in the case of Textcontent it will just show as text.
+
+            (c) Manipulating style and classes :
+            for individual elem use as style.color = "";
+            for using the class for styling we can use classList as .classList.add('makeitfontss');
+
+            (d) Creating and Deleting Element :
+                1. createElement() :  to create a element and we can use it by appendchild() where we want to store it in the body and what to store
+                document.queryselector("body").appendchild(h1);
+                removechild(); 
+
+            (e) Events Handling :
+                -> jabh bhi aap kisis elem pae kisi bhi prakar ka koi action karte ho to waha par event by default automatically raise hota hai agar apnae koi event listener na lagay ho to wou event ignore krdiya jaata hai par agar aapne listener banaya hai toh uss event par toh wou event ignore nahi kiya jayaega balki uska listenere chalega.
+
+                
+
+
+
+

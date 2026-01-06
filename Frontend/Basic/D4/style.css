@@ -7,3 +7,17 @@
     background-color: yellow;
     /* background-color: linear-gradient(to right, orangered, orange, yellow); */
 }
+
+.makeitfontss{
+    font-weight: bold;
+    font-size: 5em;
+    font-family: 'Avantica';
+    color: linear-gradient(to left, white, grey);
+}
+
+.makeitfine{
+    height: 14em;
+    width: 14em;
+    background-size: cover;
+    background-position: center;
+}
