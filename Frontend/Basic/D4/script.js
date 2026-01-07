@@ -191,4 +191,65 @@ calbtn.addEventListener('click', function(){
     calbtn.style.fontSize = '1vw';
     alert("Let's do it!");
     // screen.style.backgroundColor = 'black';
-})
+});
+
+function rs(a,b,c,d,...rest){
+    console.log(a,b,c,d,...rest);
+}
+
+rs(1,2,3,4,5,6,7,8);
+
+// Hoisting :
+// let a;
+// a=12;
+console.log(bss);
+let bss = 12;   //no error Hoisting gives undefined value
+
+(function abbbs(){
+    console.log("Heyyyyyyy!");
+})();
+
+
+(function ii(){
+    let a = 12;
+
+    function setter(val){
+        a= val;
+    }
+
+    function getter(){
+        console.log(a);
+        
+    }
+}) ();
+
+
+let om = (function harae(){
+    return {
+        // objects 
+        imageEffect : function(){
+            console.log("Image Effect");
+            
+        },
+        mousefollower : function(){
+            console.log("Mousefollower");
+            
+        },
+    };
+}) ();
+
+om.mousefollower();
+
+
+function hho(){
+    return function(){
+        // console.log("heyeheye");
+        fncc();
+    }
+}
+hho(
+    function(){
+        console.log("Heyeehye");
+        
+    }
+);

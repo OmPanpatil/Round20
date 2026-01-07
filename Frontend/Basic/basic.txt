@@ -531,4 +531,98 @@ media queries
 
 
 
+                ## Core JS functions, 
+
+                    => what is a functions : Kuch code jou aap kabhi chalane chahte ho toh wou chal jayega.
+                    => It is a block of code which can be reused and run at any point of time.
+
+
+                    function abcd(){
+
+                    }
+                    abcd();
+
+                    => When we don't want to run the code immediately but we want to reuse the code so we use the func.
+
+                    => To rewrite and reusing the code
+
+                    => Do Not Repeat Yourself and Write everything Twice.
+
+                    => Parameter takes the value and act as a variable. Arguments assigns the value in param.
+
+                    => Types of Functions :
+                        -> 1. Function Statement : function abcd(){} abcd();
+                        -> 2. FUnction Expression : let ans = function abcd(){} ans();
+                        -> 3. Anonymous FUnction : function(){}
+
+                        * FAt Arrow Function :
+                            (1) Fat arrow Function : ()=>{}
+                            (2) Fat arrow function with one paramter :
+                                -> let ans = (aa)=>{
+
+                                }
+                                ans(12);
+                            (3) Fat arrow function with implicit return : let ans = ()=> "ans", 12; let supans = ans();
+
+
+                            * return :
+                                -> When the lines of code run and it gets a function in it it will goes into the function and if it returns or print something it will be going back in the line of code for example line number 31 when the function is call back.
+
+                                function abcd(){
+                                    return 12;
+                                }
+                                abcd();
+
+                                ## Advanced JS Functions :
+
+                                * Rest paramters :
+                                    -> When we make a function and call it by with 8 elem. and param a,b,c,d,...rest 
+                                    -> It will save the remaining as array.
+
+                                * Hoisting : Variables and functions in js it makes or move the declaration part at the top
+                                    -> console.log(a);
+                                    let a = 12; (let a, a=12) the Declaration goes on the top let a, log(a), a=12;
+
+                                * IIFE : Immediately Invoked Function Expression.
+                                    -> (function abb(){})();
+                                    -> Use it doesnot get any varaible exposed to the console or keep the variable private.
+
+                                * Higher Order Functions :
+                                    -> Returns functions or accept the function in paramter or both.
+
+                                * Callback functions :
+                                    -> Any function which is present in callback while call back for a function.
+                                    -> Agar ek function mein paramter mein function pass kiya wou hai call back and jismein pass kiya wou hai hofs
+
+                                * First Calss Functions : The JS functions can be treated as a value. Because it can be treated as a value.
+
+                                * Pure and impure function : 
+                                    -> A function without side Effect.
+                                    -> does not modify the external or global scope value is a  pure function.
+
+
+                                    -> Impure function : A function does side effect  to the external value is an impure function.
+
+                                    -> 
+
+
+
+                                * Global Scope : When the code is not present in any under braces.
+
+                                * Local Scope : When it is under any braces.
+
+                                * Closures : Ek concept hai jisme function return karta hai aur ek aur function and returned function mein aap use karte ho koi parent function ka data
+                                -> function abcd(){
+                                    let a = 12;
+                                    return function(){
+                                        log(a);
+                                    }
+                                }
+                                let ans  = abcd();
+                                ans();
+
+
+
+
+
 
