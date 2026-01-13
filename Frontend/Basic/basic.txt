@@ -625,4 +625,31 @@ media queries
 
 
 
+                                // Arrays and Objects :
+                                    -> let a = [12,1,3,14];
+                                    -> Aek saath kahi saare data ko aek saath rakhne walla data structure ko array kehte hai.
+                                    -> Whenever u need to store multiple values.
+                                    -> To access the elements of the array by indexing
+
+                                    In Js the array is in heterogeneou.
+
+
+
+                                    -> It's a key and value pair to hold together.
+                                    -> let obj = {
+                                        name : om,
+                                        number : 77777
+                                    };
+                                    -> Jab bhi aapko ek se jyada value ko "ek hi element " kae baare mae store karna ho. 
+
+
+                                    -> Constant sae aap value chage nhi kar sakte update kar sakhte ho value ke andar ki cheezein.
+
+                                    
+
+
+
+
+
+
 

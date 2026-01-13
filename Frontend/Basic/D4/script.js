@@ -253,3 +253,46 @@ hho(
         
     }
 );
+
+
+let bannarray = [1,2,3,4];
+let bannarray2 = new Array(5,6,7,7,8);
+bannarray2[5] = 9;
+
+
+// let om = [om, omisha, ajeet];
+
+// Questions : 
+
+// 1. Log "Hello world" to the console :
+console.log("Hello world!");
+alert("Hello world!");
+confirm("Hello world!");
+console.warn("Hello world!");
+console.error("Hello world!");
+console.info("hello world!");
+console.table({nameee: "Om", aggge : 1000});
+
+// perform 35*2-(10/2)+7 :
+console.log(35*2-(10/2)+7);
+
+// Log the data type of "123", 123, true and null using typeof operator :
+console.log(typeof 123);
+console.log(typeof "13");
+console.log(typeof true);
+console.log(typeof null);
+
+// write a program to swap two numbers :
+
+let p =5;
+let q = 10;
+p = p+q;
+q = p - q;
+p = p - q;
+[p,q] = [q,p];
+console.log(p, q);
+
+
+
+
+
