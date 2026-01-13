@@ -292,7 +292,28 @@ p = p - q;
 [p,q] = [q,p];
 console.log(p, q);
 
+Number("50");
+parseInt("100");
+parseFloat("12.34");
+String(123);
+Boolean(1);
 
 
+let mm = [1,2,3,4,5];
+let ansn = mm.map(function(val){
+    return val * 1.1;
+});
+
+let ansmm = mm.reduce(function(acc, val){
+    return acc *val * 2;
+}, 1);
+
+// Create an array of 5 numbers and log the sum using .reduce() :
+
+let arr5 = [1,2,3,4,5];
+let sumarr5 = arr5.reduce(function(acc, val){
+    return acc + val;
+}, 0);
+console.log(sumarr5);
 
 

@@ -645,7 +645,34 @@ media queries
 
                                     -> Constant sae aap value chage nhi kar sakte update kar sakhte ho value ke andar ki cheezein.
 
-                                    
+                                    Object.freeze(objname);  so that nothing can be change in it's value or get update
+
+
+Conversion from string into pacific number or else :
+
+Number("50");
+parseInt("100");
+parseFloat("12.34");
+String(123);
+Boolean(1);
+
+Undefined : When we make the value and doesn't declare it it's undefined.
+Null : it's declared and no value is given 
+Nan : Error
+
+
+    ## Map, FIlter, Reduce :
+
+        1. Map : when we use Map we get a blank array.
+            -> Map aek naya array banata hai and us array mae har baar element leke aata hai jou map ke andar se return hoga.
+            -> Naye array me returned value daalo
+        
+        2. FIlter : it will just return true or false.
+        -> naaye array mae true returned value daalo
+
+        3. Reduced : it will reduced all the array into one elem.
+        -> It has accumulator and key
+        -> Accumulator is the starting point and key are the values.
 
 
 
