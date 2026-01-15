@@ -675,6 +675,33 @@ Nan : Error
         -> Accumulator is the starting point and key are the values.
 
 
+        4. Set : There is something in array where dupicates of array can give single value of it but the answer we get is in set.
+        -> so we put under [] bracket and inside it first we use ... spread operator then that array or arrayname.
+        -> we use this because we get the real value copy of the array that doesn't change when the copy value change but the original value remains the same.
+        -> new set(arrayname)
+        -> [...new Set(arrname)]
+
+        
+// Unique [1,2,3,4,5,6,21];
+// Sort in ascending and descending order : a-b, b-a
+// Accesing the value from Indexing the number : [1,0,5,3,2]
+
+
+## Javascript Advanced Hofs, Callbacks and closures :
+
+Higher Order Function : Where the function gets the value as a function or return function
+    -> Aek essa function jou accept karre dusra function in paramter from the argument yah fir return karre 
+
+Callbacks : It is a function which accepts the function as a paramter from calling the function as an arguent and function runs in it.
+    -> function abcd(val){
+        val();
+    }
+    abcd(function(){});
+
+    -> Aek essa function jou aap kissi aur function mae pass krte ho future mein chalaneke liye cb func kehte hai.
+
+
+
 
 
 

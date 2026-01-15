@@ -202,8 +202,8 @@ rs(1,2,3,4,5,6,7,8);
 // Hoisting :
 // let a;
 // a=12;
-console.log(bss);
-let bss = 12;   //no error Hoisting gives undefined value
+// console.log(bss);
+// let bss = 12;   //no error Hoisting gives undefined value
 
 (function abbbs(){
     console.log("Heyyyyyyy!");
@@ -316,4 +316,42 @@ let sumarr5 = arr5.reduce(function(acc, val){
 }, 0);
 console.log(sumarr5);
 
+let sum = 0;
 
+for(let i=1; i<=5; i++){
+    sum += i;
+}
+console.log(sum);
+
+
+
+// Array 
+
+// Q. Remove the duplicate values from an array :
+
+let array = [1,2,22,33,44,44,33,22,2,1];
+let arrans = [...new Set(array)];
+console.log(arrans);
+
+
+// Q. Find the second largest number in an array :
+
+let arrrr2 = [1,2,3,4,5,6,5,4,3,21,2,1];
+let arrrans = ([...new Set(arrrr2)]);
+let arrsort = arrans.sort(function(a,b){
+    // return a-b;  //for ascending order
+    return b-a;
+});
+console.log(arrsort[1]);
+
+
+// Unique [1,2,3,4,5,6,21];
+// Sort in ascending and descending order : 
+// Accesing the value from Indexing the number 
+
+
+let ars = [5,3,8,7,1];    //how many times the values have been returned.
+let objs = {}
+ars.forEach(function(val){
+    objs[val] === undefined? (objs[val] = 1) : (objs[val]++);    // when the val as we know it is undefined we will get then suppose for number 3 we get undefined then we will assign it to 1 else we will increment it by 1.
+});
