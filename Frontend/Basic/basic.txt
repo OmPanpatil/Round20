@@ -690,7 +690,11 @@ Nan : Error
 ## Javascript Advanced Hofs, Callbacks and closures :
 
 Higher Order Function : Where the function gets the value as a function or return function
-    -> Aek essa function jou accept karre dusra function in paramter from the argument yah fir return karre 
+    -> Aek essa function jou accept karre dusra function in paramter from the argument yah fir return karre ek aur function aise func ko kehte hai hof's.
+    -> function abc(val){
+        return function(){}
+    }
+    abc(function(){});
 
 Callbacks : It is a function which accepts the function as a paramter from calling the function as an arguent and function runs in it.
     -> function abcd(val){
@@ -699,6 +703,11 @@ Callbacks : It is a function which accepts the function as a paramter from calli
     abcd(function(){});
 
     -> Aek essa function jou aap kissi aur function mae pass krte ho future mein chalaneke liye cb func kehte hai.
+
+closure : Ek aisa function jou ki return karre ek function aur wou function use karre koi parent function ka variable.
+
+
+## SetTimeOut : It is use for the function to run in a period of time
 
 
 

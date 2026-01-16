@@ -355,3 +355,37 @@ let objs = {}
 ars.forEach(function(val){
     objs[val] === undefined? (objs[val] = 1) : (objs[val]++);    // when the val as we know it is undefined we will get then suppose for number 3 we get undefined then we will assign it to 1 else we will increment it by 1.
 });
+
+// Javascript questions on Hofs , cb, closures :
+
+// Create a function that takes another functions an argument and call it after 3 seconds (hof + cb)
+
+function call(cfn){
+    setTimeout(cfn, 3000);
+        
+}
+call(function(){
+    console.log("Heyy!");
+    
+});
+
+// Implement ur own version of .map() as a higher-order function :
+
+// Aek function jou ki accept karre array and accept karre ki kya chalana hai har value pae
+
+let arrname = [1,2,3,4,5];
+function mapkicopy(arr, fncb){
+    let arrrmap = [];   //new blank array.
+    // arr.forEach(function)
+    for(let i=0; i<arr.length; i++){
+        arrrmap.push(fncb(arr[i]));
+    }
+    return arrrmap;
+}
+
+mapkicopy(arrname, function(val){
+    return valuee + 3;
+});
+
+
+// Understanding : FIrst function banega mapkicopy jo ki accept karega array and function as a callback. Fir ek blank array banega jisme hum push karenge har value ko after calling the callback function on each value of the array. Finally return the new array.
