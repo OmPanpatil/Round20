@@ -384,8 +384,134 @@ function mapkicopy(arr, fncb){
 }
 
 mapkicopy(arrname, function(val){
-    return valuee + 3;
+    return val + 3;
 });
 
 
 // Understanding : FIrst function banega mapkicopy jo ki accept karega array and function as a callback. Fir ek blank array banega jisme hum push karenge har value ko after calling the callback function on each value of the array. Finally return the new array.
+
+let swarvals = ['a', 'e', 'i', 'o', 'u'];
+function swarmap(arr,fnnc){
+    let swarra = [];
+    for(let i=0; i<arr.length; i++){
+        swarra.push(fnnc(arr[i]));
+    }
+    return swarra;
+}
+
+swarmap(swarvals, function(val){
+    return val *3;
+});
+
+
+// Write a function that uses closures to create a counter :
+
+function counterfn(){
+    let count = 0;
+    return function(){
+        count++;
+        console.log(count);
+    }
+}
+
+let makecount = counterfn();
+makecount();
+makecount();
+makecount();
+makecount();
+makecount();
+
+// Q. Implement a function that limits how many times another function can be called (closure + Hof):
+
+// function limitfnc(fn, lim){}
+
+// limitfnc(fn, 3);
+
+function limiterfnc(fn, limits){
+
+    let total = 0;
+    return function(){
+        if(total<limits){
+            total++;
+            fn();
+        }
+        else{
+            console.log("Exceeded!");
+            
+        }
+    }
+}
+
+let limit = limiterfnc(function(){
+    console.log("Heyy!");
+    
+}, 3);
+limit();
+limit();
+limit();
+limit();
+
+// Simply understood all the time value were send from the argument to the parameter to accept it and use it inside the function body. 
+
+// Create a function that takes a callback and executes it after every `n` seconds indefinitely :
+
+function nn(fnc, n){
+    setInterval(fnc, n)
+}
+
+nn(function(){
+    console.log("Hello");
+    
+},3000);
+
+
+// q. Implement a function that returns a function with a preset greeting (closure) :
+
+function greeter(greets){
+
+    return function(namesss){
+        console.log(`${greets} ${namesss}` + "⚡");
+        
+    }
+}
+
+let greeterfnc = greeter("Konichiwa! Namaste! Hola! Bonjour! Salam!");
+greeterfnc("Om");
+
+
+// Implement a function that takes a callback and only executes it once (HOF + Closure) :
+
+function oncefnnc(fnnc){
+    let executed = false;
+    return function(){
+        if(!executed){
+            executed = true;
+            fnnc();
+        }
+    }
+}
+oncefnnc(function(){
+    console.log("Heyyy!"); 
+});
+
+// Implement a function that throttles another function (Hof+closure) :
+
+function thrott(fnc, tim){
+    let lastcall = 0;
+    return function(){
+        let now = date.now();
+        if(now - lastcall >= tim){
+            lastcall = now;
+            fnc();
+        }
+    }
+}
+
+let throtthling = thrott(function(){
+    console.log("Will run in 2 seconds");
+    
+}, 2000);
+
+throtthling();
+
+
