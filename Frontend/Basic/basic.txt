@@ -711,6 +711,29 @@ closure : Ek aisa function jou ki return karre ek function aur wou function use 
 
 
 
+    * JS -> DOM (Frontend ki Javascript), Backend, react, desktop aps, Mobile apps, libraries
+
+        -> 5 pillars of DOM :
+            -> (a) Accessing or (Selecting an element) :  let h1 = document.querselector('h1');
+            -> Modifying Elements
+            -> Modifying style and classes (Changing html :.innerhtml and css : .style.property = 'white')
+            ->  Event listener (.addeventlistener())
+            -> document.getElementbyId('box');
+            -> document.queryselector(), doc.quersAll(), Nodelist (Array ke form mae)
+
+            -> 
+            (a) Accessing Elements, (document.queryselector())
+            (b) Modifying Elements, (InnerHtml, Textcontent)
+            (C) Manipulating Styles and classes, (Styles and classList)
+            (d) Creating and Deleting Elements. (createElement(), appendchild(), removechild())
+            (e) Event handling (addEventListener()),
+            (f) Event Object
+
+
+            -> Selection of an element :document.queryselector('h1'); ('#box), ('.box');
+            -> 
+
+
 
 
 
