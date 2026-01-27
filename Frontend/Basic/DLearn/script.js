@@ -32,9 +32,24 @@ h5.style.textAlign = 'center';
 h5.style.marginTop = '20px';
 
 let btnsss = document.createElement('button');
-btnsss.innerHTML = 'Friendhip';
+btnsss.innerHTML = 'Add Friend';
 document.body.appendChild(btnsss)
 btnsss.style.backgroundColor = 'yellow';
 btnsss.style.padding = '10px 20px';
+btnsss.style.marginLeft = '47%';
+
+let flag = 0;
+btnsss.addEventListener('click', function(){
+    if(flag === 0){
+        h5.innerHTML = 'Friend Added';
+        btnsss.innerHTML = 'Following';
+        flag = 1;
+    }
+    else{
+        h5.innerHTML = 'Stranger'
+        btnsss.innerHTML = 'Add Friend';
+        flag = 0;
+    }
+})
 
 
